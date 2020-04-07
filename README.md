@@ -4,4 +4,5 @@ a simple python script to mirror a region of your monitor on a cheap oled displa
 
 libs used:
 https://github.com/sumotoy/SSD_13XX (display driver)
+
 https://github.com/Bodmer/JPEGDecoder (jpeg decoder)
