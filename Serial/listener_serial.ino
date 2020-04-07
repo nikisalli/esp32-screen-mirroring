@@ -33,17 +33,14 @@ void loop(){
 
 	Serial.print(size);
 
-	uint8_t * buf = 0;
-	buf = new uint8_t[size];
+	uint8_t buf[3000] = {};
 
 	for(int i=0;i<size;i++){
 		while(Serial.available() < 1){}
 		buf[i] = Serial.read();
-		//Serial.read();
 	}
 
 	drawArrayJpeg(buf, size, 0, 0);
-	delete[] buf;
 }
 
 void drawArrayJpeg(const uint8_t arrayname[], uint32_t array_size, int xpos, int ypos) {
